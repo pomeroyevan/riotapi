@@ -1,0 +1,8 @@
+import access as a
+
+
+summoner = 'toast'
+
+print(a.URL['base'].format(region = a.region)+a.URL['summoner_by_name'].format(sum_name=summoner)+a.URL['end'].format(keys=a.api_key))
+
+print((a.URL['base']+a.URL['summoner_by_name']+a.URL['end']).format(region = a.region, sum_name=summoner,keys=a.api_key))
